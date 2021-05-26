@@ -8,7 +8,8 @@ spec:
      app: helloworldnew
    template:
       metadata:
-        app: helloworldnew
+         labels:
+            app: helloworldnew
       spec:
         containers:
             - name: helloreplica
