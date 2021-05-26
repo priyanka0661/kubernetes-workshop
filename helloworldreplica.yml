@@ -5,11 +5,12 @@ metadata:
 spec:
    replicas: 4
    selector:
-     app: helloworldnew
+     matchLabels:
+       app: helloworldnew
    template:
       metadata:
-         labels:
-            app: helloworldnew
+        labels:
+        app: helloworldnew
       spec:
         containers:
             - name: helloreplica
