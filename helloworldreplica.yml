@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
    name: helloworldreplica
+   labels:
+      app: helloworldnew
 spec:
    replicas: 4
    selector:
@@ -14,6 +16,6 @@ spec:
       spec:
         containers:
             - name: helloreplica
-              image: helloworld
+              image: arjunachari12/k8s-demo
               ports:
-                containerPort: 8080
+                containerPort: 3000
