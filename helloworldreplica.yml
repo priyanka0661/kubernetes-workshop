@@ -3,19 +3,19 @@ kind: ReplicaSet
 metadata:
    name: helloworldreplica
    labels:
-      app: helloworldnew
+      app: helloworld
 spec:
    replicas: 4
    selector:
      matchLabels:
-       app: helloworldnew
+       app: helloworld
    template:
       metadata:
         labels:
-        app: helloworldnew
+        app: helloworld
       spec:
         containers:
-            - name: helloreplica
+            - name: k8s-demo
               image: arjunachari12/k8s-demo
               ports:
                 - name: replicaport
