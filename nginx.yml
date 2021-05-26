@@ -10,4 +10,4 @@ spec:
          image: nginx
          ports:
           - name: nginx-port
-           containerPort: 80
+            containerPort: 80
