@@ -18,4 +18,5 @@ spec:
             - name: helloreplica
               image: arjunachari12/k8s-demo
               ports:
-                containerPort: 3000
+                - name: replicaport
+                  containerPort: 3000
