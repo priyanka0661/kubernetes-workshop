@@ -1,7 +1,7 @@
-apiVersion:
-kind:
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: 
+  name: helloworld-deployment
 spec:
   replicas: 3
   selector:
