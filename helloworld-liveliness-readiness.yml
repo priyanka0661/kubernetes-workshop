@@ -25,10 +25,10 @@ spec:
                       port: nodejs-port
                     initialDelaySeconds: 15
                     timeoutSeconds: 30
-                 readinessProbe:
+                readinessProbe:
                     httpsGet:
-                        path: /
-                        port: nodejs-port
+                      path: /
+                      port: nodejs-port
                     initialDelaySeconds: 15
                     timeoutSeconds: 30
            
