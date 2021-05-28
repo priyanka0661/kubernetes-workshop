@@ -8,10 +8,10 @@ spec:
      matchLabels:
         app: helloworld-db
   template:
-      metadata:
-         labels:
-            app: helloworld-db
-       spec:
+     metadata:
+        labels:
+           app: helloworld-db
+     spec:
           containers:
              - name: k8s-demo
                image: arjunachari12/k8s-demo
