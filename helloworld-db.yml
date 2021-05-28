@@ -29,13 +29,9 @@ spec:
                       secretKeyRef:
                          name: helloworld-secrets
                          key: rootPassword
-                  - name: MYSQL_DATABASE
-                    valueFrom:
-                       secretKeyRef:
+                 - name: MYSQL_DATABASE
+                   valueFrom:
+                      secretKeyRef:
                          name: helloworld-secrets
                          key: database
-                       
-                      
-           
-             
   
